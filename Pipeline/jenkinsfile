@@ -2,7 +2,7 @@ node {
     
      
   stage('Git-Checkout') {
-   git 'https://github.com/Shyamjith06/petclinic-1.git'
+   git 'https://github.com/Shyamjith06/Continuous_integration.git'
   }
     
  def project_path="petclinic"
