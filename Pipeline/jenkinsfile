@@ -41,6 +41,14 @@ sh 'mvn sonar:sonar'
         }
 
    
-} 
+}
+stage('Input for deploy in test server') {  
+   input('Do you want to deploy in test server proceed?')      
+        }
+}
+  stage('Downstream Build -- Docker Deployment'){
+	 build 'TestServer'
+	}
+  } 
 }
 
