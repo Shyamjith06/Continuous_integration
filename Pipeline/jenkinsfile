@@ -33,7 +33,7 @@ sh 'mvn sonar:sonar'
         def server= Artifactory.server 'Artifactory'
                     def uploadSpec= """{
                         "files": [{
-                        "pattern": "/root/.jenkins/workspace/petclinic-1/petclinic/target/*.war",
+                        "pattern": "/root/.jenkins/workspace/Petclinic_CI/petclinic/target/*.war",
                         "target": "petclinic-1"}]
                     }"""
         server.upload(uploadSpec)
